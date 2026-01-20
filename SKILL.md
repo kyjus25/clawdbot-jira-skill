@@ -41,6 +41,7 @@ All commands live in `{baseDir}/scripts/jira.sh`.
 - `{baseDir}/scripts/jira.sh my [max]` — open issues assigned to you
 - `{baseDir}/scripts/jira.sh hours 2025-01-01 2025-01-07` — your logged hours by issue (JSON)
 - `{baseDir}/scripts/jira.sh hours-day 2025-01-07 [name|email]` — logged hours for a day grouped by user/issue; optional filter (name/email; also resolves to accountId)
+- `{baseDir}/scripts/jira.sh hours-issue ABC-123 [name|email]` — logged hours for an issue; optional filter (name/email; also resolves to accountId)
 
 ## Command Reference
 
@@ -112,6 +113,11 @@ All commands live in `{baseDir}/scripts/jira.sh`.
 - **Logged hours for a day (user filter)**  
   ```bash
   {baseDir}/scripts/jira.sh hours-day 2025-01-05 "jane"
+  ```
+
+- **Logged hours for an issue**  
+  ```bash
+  {baseDir}/scripts/jira.sh hours-issue ABC-321 "jane"
   ```
 
 
